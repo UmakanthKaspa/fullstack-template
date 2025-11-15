@@ -1,0 +1,136 @@
+================================================================================
+  FULLSTACK TEMPLATE - INSTALLATION GUIDE
+================================================================================
+
+PREREQUISITES:
+1. Node.js installed (https://nodejs.org/)
+2. MySQL installed (https://dev.mysql.com/downloads/)
+3. MySQL is running
+
+================================================================================
+STEP 1: INSTALL DEPENDENCIES
+================================================================================
+
+On Linux/macOS:
+  $ ./setup.sh
+
+On Windows:
+  > setup.bat
+
+Or manually:
+  $ cd backend
+  $ npm install
+  $ cd ../frontend
+  $ npm install
+
+================================================================================
+STEP 2: CONFIGURE DATABASE
+================================================================================
+
+Edit file: backend/.env
+
+Change this line if you have a MySQL password:
+  DB_PASSWORD=your_mysql_password
+
+If your MySQL has no password, leave it empty:
+  DB_PASSWORD=
+
+================================================================================
+STEP 3: CREATE DATABASE (AUTOMATIC!)
+================================================================================
+
+Run this command:
+  $ cd backend
+  $ npm run setup-db
+
+You should see:
+  ✓ Database created: fullstack_template
+  ✓ Users table created
+  ✓ Dummy users inserted
+
+  You can login with:
+    Username: admin  | Password: password123
+    Username: john   | Password: password123
+    Username: jane   | Password: password123
+    Username: demo   | Password: password123
+
+================================================================================
+STEP 4: START BACKEND SERVER
+================================================================================
+
+In Terminal/Command Prompt 1:
+  $ cd backend
+  $ npm start
+
+You should see:
+  ✓ Database connected successfully
+  ✓ Server is running on port 5000
+
+LEAVE THIS TERMINAL OPEN!
+
+================================================================================
+STEP 5: START FRONTEND
+================================================================================
+
+In NEW Terminal/Command Prompt 2:
+  $ cd frontend
+  $ npm start
+
+Browser will open automatically at: http://localhost:3000
+
+LEAVE THIS TERMINAL OPEN TOO!
+
+================================================================================
+STEP 6: LOGIN
+================================================================================
+
+In browser, you'll see a login page.
+
+Enter:
+  Username: admin
+  Password: password123
+
+Click "Login"
+
+================================================================================
+STEP 7: TEST THE APP
+================================================================================
+
+After login, you'll see:
+  - Your username and email
+  - A "Ping Server" button
+
+Click "Ping Server" to test the connection!
+
+You should see a JSON response like:
+  {
+    "success": true,
+    "message": "pong",
+    ...
+  }
+
+================================================================================
+DONE! 🎉
+================================================================================
+
+You now have a working fullstack application!
+
+NEXT STEPS:
+- See CREDENTIALS.md for all login users
+- See USAGE_GUIDE.md for detailed usage
+- See README.md for full documentation
+
+TROUBLESHOOTING:
+- Database error? Check MySQL is running and password in backend/.env
+- Port 5000 in use? Change PORT in backend/.env
+- Port 3000 in use? Press Y when prompted to use different port
+- Can't login? Make sure "npm run setup-db" completed successfully
+
+COMMANDS SUMMARY:
+  Setup database:   cd backend && npm run setup-db
+  Start backend:    cd backend && npm start
+  Start frontend:   cd frontend && npm start
+
+Need help? Read QUICKSTART.md for detailed steps!
+
+================================================================================

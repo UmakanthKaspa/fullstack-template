@@ -1,0 +1,24 @@
+{
+  "name": "fullstack-template",
+  "version": "1.0.0",
+  "description": "Complete fullstack template with Node.js, Express, React, and MySQL",
+  "scripts": {
+    "setup": "npm install --prefix backend && npm install --prefix frontend",
+    "start:backend": "npm start --prefix backend",
+    "start:frontend": "npm start --prefix frontend",
+    "dev:backend": "npm run dev --prefix backend",
+    "build:frontend": "npm run build --prefix frontend"
+  },
+  "keywords": [
+    "fullstack",
+    "template",
+    "nodejs",
+    "express",
+    "react",
+    "mysql",
+    "jwt",
+    "authentication"
+  ],
+  "author": "",
+  "license": "MIT"
+}
