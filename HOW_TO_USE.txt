@@ -1,0 +1,81 @@
+================================================================================
+                        HOW TO USE THIS TEMPLATE
+================================================================================
+
+FIRST TIME SETUP:
+================================================================================
+
+Step 1: Run Setup Wizard
+  $ npm install
+  $ npm run wizard
+
+  Answer the questions:
+  - MySQL username: root
+  - MySQL password: your_password
+  - Database name: (press Enter for default)
+  - Admin username: (press Enter for "admin")
+  - Admin email: (press Enter for default)
+  - Admin password: type_your_password
+
+  Done! Database created, admin user added!
+
+Step 2: Install Dependencies
+  $ npm run install-deps
+
+  Done! All dependencies installed!
+
+
+EVERY TIME YOU WANT TO RUN THE APP:
+================================================================================
+
+Just run:
+  $ npm start
+
+Both frontend and backend start together!
+Browser opens automatically.
+Login with your admin credentials!
+
+To stop: Press Ctrl+C
+
+
+COMMANDS:
+================================================================================
+
+Setup wizard:           npm run wizard
+Install dependencies:   npm run install-deps
+Start app:              npm start
+
+
+WHAT YOU CREATED:
+================================================================================
+
+Database:    The name you entered
+Admin user:  The username you entered
+Password:    The password you entered
+
+
+URLS:
+================================================================================
+
+Frontend: http://localhost:3000 (or next free port)
+Backend:  http://localhost:5000 (or next free port)
+
+URLs shown when you run "npm start"
+
+
+HELP:
+================================================================================
+
+MySQL not running:
+  $ sudo systemctl start mysql
+
+Forgot admin password:
+  Run wizard again: npm run wizard
+
+Change database settings:
+  Edit file: backend/.env
+
+
+================================================================================
+                            THAT'S IT! 🚀
+================================================================================

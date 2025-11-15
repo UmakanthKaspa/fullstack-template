@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "Complete fullstack template with Node.js, Express, React, and MySQL",
   "scripts": {
-    "setup": "npm install --prefix backend && npm install --prefix frontend",
+    "wizard": "node setup-wizard.js",
+    "install-deps": "npm install --prefix backend && npm install --prefix frontend",
+    "dev": "node start.js",
+    "start": "node start.js",
     "start:backend": "npm start --prefix backend",
     "start:frontend": "npm start --prefix frontend",
     "dev:backend": "npm run dev --prefix backend",
@@ -20,5 +23,9 @@
     "authentication"
   ],
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "mysql2": "^3.6.5",
+    "bcryptjs": "^2.4.3"
+  }
 }

@@ -1,0 +1,82 @@
+================================================================================
+                    FULLSTACK TEMPLATE - QUICK REFERENCE
+================================================================================
+
+FIRST TIME SETUP:
+================================================================================
+
+1. Create database:
+   $ mysql -u root -p < create-database.sql
+
+2. Set password in backend/.env:
+   DB_PASSWORD=your_mysql_password
+
+3. Install & Run:
+   $ npm install
+   $ npm start
+
+
+DAILY USAGE:
+================================================================================
+
+Start app:          $ npm start
+Stop app:           Ctrl+C
+
+Login:              admin / password123
+URLs shown when started (auto-detects free ports!)
+
+
+FILE LOCATIONS:
+================================================================================
+
+Database config:    backend/.env
+Database SQL:       create-database.sql
+Login page:         frontend/src/pages/Login.js
+Dashboard:          frontend/src/pages/Dashboard.js
+API routes:         backend/src/routes/
+
+
+TROUBLESHOOTING:
+================================================================================
+
+MySQL not running:
+  $ sudo systemctl start mysql
+
+Wrong password:
+  Edit: backend/.env
+
+Port busy:
+  Auto-handled! Script finds free ports.
+
+Can't login:
+  Check database was created: show databases;
+
+
+USEFUL COMMANDS:
+================================================================================
+
+Setup dependencies:     npm run setup
+Start both servers:     npm start
+Backend only:           cd backend && npm start
+Frontend only:          cd frontend && npm start
+
+
+LOGIN CREDENTIALS:
+================================================================================
+
+Username: admin    Password: password123
+Username: john     Password: password123
+Username: jane     Password: password123
+Username: demo     Password: password123
+
+
+WHAT PORTS ARE USED:
+================================================================================
+
+Backend:  5000 (or next available: 5001, 5002...)
+Frontend: 3000 (or next available: 3001, 3002...)
+
+
+================================================================================
+Need help? Read SIMPLE_SETUP.md
+================================================================================

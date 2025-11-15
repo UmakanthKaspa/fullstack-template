@@ -6,36 +6,28 @@ This is a complete, ready-to-use fullstack application template with:
 - **Authentication:** Login system with JWT
 - **API:** Ping/Pong test endpoint
 
-## 🚀 Quick Start (3 Steps)
+## 🚀 Super Quick Start (3 Steps)
 
-### 1️⃣ Install Dependencies
+### 1️⃣ Create Database
 ```bash
-# Linux/macOS
-./setup.sh
-
-# Windows
-setup.bat
+mysql -u root -p < create-database.sql
 ```
 
-### 2️⃣ Setup Database
-```bash
-cd backend
-npm run setup-db
+### 2️⃣ Set MySQL Password
+Edit `backend/.env` and change:
+```env
+DB_PASSWORD=your_password
 ```
 
-### 3️⃣ Start the App
-
-**Terminal 1 - Backend:**
+### 3️⃣ Run Everything!
 ```bash
-cd backend
+npm install
 npm start
 ```
 
-**Terminal 2 - Frontend:**
-```bash
-cd frontend
-npm start
-```
+**That's it!** Both frontend + backend start together! 🎉
+
+> 📖 **See [SIMPLE_SETUP.md](SIMPLE_SETUP.md) for detailed simple setup**
 
 ## 🎯 Login Credentials
 
